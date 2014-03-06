@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" /> 
+		<title>Galleria javascript DOM</title>	
+		<script type="text/javascript">
+		function gallery() {
+			
+			var immagini = document.getElementsByTagName('img');
+			document.getElementById('pics').appendChild(immagini[0].cloneNode(true));
+			var n = immagini.length-1;
+
+			for(var j=0; j < immagini.length; j++){
+				immagini[j].setAttribute('class', 'immagine');
+			}
+
+			var op = setInterval(function() {changePic()}, 2500);
+
+			function changePic() {
+
+				function opacity(img){
+					var n = 1;
+					var op = setInterval(function() {lessOpacity()}, 20);
+
+					function lessOpacity() {
+						n = n-0.05;
+						img.style.opacity = n;
+
+						if(n < 0) {
+							clearInterval(op);
+							img.style.opacity = 0;
+						}
+					}
+				}				
+
+
+				for(var i = 0; i < immagini.length; i++) {
+					if(i < n) {
+						immagini[i].style.opacity=1;
+					}
+					if(i >= n && n == 0) {
+						immagini[i].style.opacity=1;
+					}
+				}
+
+				opacity(immagini[n]);
+
+				if(n-1 >= 0) {
+					n=n-1;
+				}else{
+					n=immagini.length-1;			
+				}
+			}
+		}		
+		</script>
+
+		<style>
+		body {
+			background-color: #000;
+			color: #fff;
+		}
+		.immagine{
+			position:absolute;
+			width: 100%;
+		}
+		#pics {
+			width:60%;
+			margin:10px auto;
+			position: relative;			
+		}		
+		h3 {
+		text-align: center;
+		}
+		</style>		
+	</head>
+	<body onload="gallery()">
+		<h3>Galleria javascript DOM</h3>
+		<div id="pics">
+			<img src="img/stark.jpg" />
+			<img src="img/lannister.jpg" />
+			<img src="img/greyjoy.jpg" />
+		</div>
+	</body>
+</html>
