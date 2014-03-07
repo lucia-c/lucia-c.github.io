@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-2.0.3.js"></script>
+<script src="js/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+<script src="js/jqscript.js"></script>
+<title>Wunderlist</title>
+</head>
+<body>
+<div id="container">
+	<nav>
+	<div id="intestaz">
+		<p>
+			<a href="#">Wunderlist</a>
+		</p>
+	</div>
+	<ul id="base">
+		<li class="hidden">
+		<span class="icon"></span>
+		<span class="item title">title</span>
+		<span class="contatore"></span>
+		</li>
+	</ul>
+	<ul id="list">
+		<li title="Cose da fare" class='selezione'>
+			<span class="icon"></span>
+			<span class="title">Cose da fare</span>
+			<span class="contatore"></span>
+		</li>
+		<li title="Preferiti">
+			<span class="icon"></span>
+			<span class="title">Preferiti</span>
+			<span class="contatore"></span>
+		</li>
+		<li title="Privato">
+			<span class="icon"></span>
+			<span class="title">Privato</span>
+			<span class="contatore"></span>
+		</li>
+		<li title="Lavoro">
+			<span class="icon"></span>
+			<span class="title">Lavoro</span>
+			<span class="contatore"></span>
+		</li>
+		<li title="shopping">
+			<span class="icon"></span>
+			<span class="title">Shopping</span>
+			<span class="contatore"></span>
+		</li>
+		<li title="Film">
+			<span class="icon"></span>
+			<span class="title">Film da Vedere</span>
+			<span class="contatore"></span>
+		</li>
+		<li title="Lista desideri">
+			<span class="icon"></span>
+			<span class="title">Lista dei desideri</span>
+			<span class="contatore"></span>
+		</li>
+	</ul>
+	<form id="aggiungiCat">
+		<img id="iconAdd" src="img/addList_small.png" alt="plus icon">
+		<input id="add" type="text" placeholder="Aggiungi una categoria"/>
+	</form>
+	<div id="rimuoviCat">
+		<img id="iconRemove" src="img/deleteList_small.png" alt="delete icon">
+		<button type="button" id="remove">Elimina categoria</button>
+	</div>
+	</nav>
+	<div id="intestazione" class="hidden">
+		<button id="mostraNav">
+		<img src="img/nav_ico.png" alt="bottone per nav"/>
+		</button>
+		Cose da fare
+	</div>
+	<section>
+	<ul>
+		<li id="insertActivity">
+		<input id="addActivity" type="text" placeholder="Aggiungi un'attività in Cose da fare"/>
+		<input type="text" id="calendario" class="hidden"/>
+		</li>
+	</ul>
+	<ul id="attivitaBase">
+		<li class="hidden">
+		<div>
+			<input type="checkbox" name="attivita" value="1"/>
+		</div>
+		<span class="testoAttivita">testo attivita</span>
+		<img src="img/preferiti.png" class="preferitiIcon" alt="preferiti"/>
+		</li>
+	</ul>
+	<ul id="listaCentrale"></ul>
+	<p id="svolte" class="hidden">Attività completate</p>
+	<ul id="listaCompletate"></ul>
+	</section>
+	<div id="tools">
+		<div class="slidingDiv">
+		</div>
+			<a class="icona_tools cliccabile" href="#" title="aggiungi amico">&#xE800;</a>
+			<a class="icona_tools cliccabile" href="#" title="invia lista">&#xE801;</a>
+			<a class="icona_tools cliccabile" href="#" title="stampa">&#xE802;</a>
+			<a class="icona_tools cliccabile" href="#" title="ordine alfabetico">&#xE804;</a>
+			<a class="icona_tools" href="#" title="cancella" id="removeActivity">&#xE803;</a>
+	</div>
+	<div id="dettagli" class="nascosto">
+		<div id="titleDettagli">
+			<h1>dettagli</h1>
+		</div>
+		<div id="bodyDettagli">
+			<div class="elementiDettagli" id="divScadenza">
+				<img src="img/calendar.png" alt="calendar" id="iconaCalendario" class="dataDettagli"/>
+				<input type="text" id="calendarioDettagli" class="hidden"/>
+				<div class="dataDettagli">
+					<p id="scadenza">
+						Imposta scadenza
+					</p>
+				</div>
+				<select id="ripeti" name="select" class="hidden">
+					<option value="mai">Non ripetere mai</option>
+					<option value="giornaliero" selected>Ripeti ogni giorno</option>
+					<option value="settimanale">Ripeti ogni settimana</option>
+					<option value="mensile">Ripeti ogni mese</option>
+					<option value="annuale">Ripeti ogni anno</option>
+				</select>
+				<button type="button" class="fontello conferma hidden">&#xE802;</button>
+				<button type="button" class="fontello cancella hidden">&#xE803;</button>
+			</div>
+			<div class="elementiDettagli" id="promemoria">
+				<img id="iconaSveglia" src="img/alarm.png" alt="sveglia" class="dataDettagli" style="width: 20px"/>
+				<input type="text" id="calendarioRicorda" class="hidden"/>
+				<span id="ora" class="hidden">
+					<input type="number" id="ore" min="0" max="23" value="00" maxlength="2" pattern="[0-9]" />:
+					<input type="number" id="minuti" min="0" max="59" value="00" maxlength="2" pattern="[0-9]"/>
+				</span>
+				<div class="dataDettagli">
+					<p class="ricordamelo">
+						Ricordamelo
+					</p>
+				</div>
+				<button type="button" class="fontello conferma hidden">&#xE802;</button>
+				<button type="button" class="fontello cancella hidden">&#xE803;</button>
+			</div>
+			<div id="listaSecondarie">
+				<div class="dataDettagli">
+					<span>+</span>
+				</div>
+				<input type="text" name="attività secondaria" placeholder="Aggiungi un'attività secondaria" class="dataDettagli" style="background-color: transparent; border: 0px" id="attSec"/>
+			</div>
+			<textarea rows="4" cols="40" placeholder="Aggiungi delle note alla tua attività.."></textarea>
+			<div id="file">
+				<input id="addFile" type="file"/>
+				<button type="button" class="fontello cancella">&#xE803;</button>
+			</div>
+			<div id="commenti">
+				<input type="text" name="commento" placeholder="Aggiungi un commento"/>
+			</div>
+		</div>
+		<div id="commenti-bottoni">			
+			<a href="#" title="cancella" id="removeActivityDettagli" style="font-family: myfont; font-size: 1.5em; margin-left: 10px">&#xE803;</a>
+			<button type="button" id="chiudi">></button>			
+		</div>
+	</div>
+</div>
+</body>
+</html>

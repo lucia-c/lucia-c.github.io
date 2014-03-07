@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style type="text/css">
+	@font-face{
+		font-family: fontello;
+		src: url('font/font/fontello.ttf');
+	}
+
+	div#calendario {
+		margin:0 auto;
+		width:490px;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		height:475px;
+		background-color: #9CB9E9;
+	}
+	div.nav{
+		border: 0px solid black;
+		background-color: #9CB9E9;
+		width:490px;
+		height:30px;
+		margin:0 auto;
+		text-align: center;
+		line-height: 30px;
+		position: relative;
+	}
+
+	div.week {
+		display: inline-block;
+		width: 70px;
+		background-color: #374A69;
+		color: white;
+		text-align: center;
+		font-variant: small-caps;
+		font-size: 0.9em;
+		height: 25px;
+		line-height: 25px;
+		clear:both;
+	}
+
+	div.giorno {
+		width: 68px;
+		height: 68px;
+		line-height: 68px;
+		text-align: center;
+		float: left;
+		border: 1px solid #9CB9E9;
+		background-color: #ffffff;
+	}
+
+/*	#calendario div:nth-child(9){ seleziona la casella del primo giorno del mese
+	}*/
+	div.nav a {
+		border-radius: 50%;
+		top: 0px;
+		font-family: "fontello";
+		display: inline-block;
+		height: 24px;
+		width: 24px;
+		text-decoration: none;
+		color: #374A69;
+	}
+
+	div.nav a#indietro {
+		position:absolute;
+		left: 3px;
+	}
+	div.nav a#avanti {
+		position:absolute;
+		right: 3px;
+	}
+	</style>
+	<title>Date</title>
+	<meta charset="utf-8" />
+	</head>
+	<body>
+		<div id="calendario">
+		$write;
+		</div>
+	</body>
+	<script type="text/javascript">
+	 var giorni = document.querySelectorAll('div.giorno');
+	 var rightmargin = ((window.innerWidth - 490)/2)+490;
+
+
+	for(var i = 0; i < giorni.length; i++) {
+
+		if((rightmargin - giorni[i].getBoundingClientRect().right) < 12 ) {
+			giorni[i].style.color = "red";
+		}
+	} 
+	</script>
+</html>

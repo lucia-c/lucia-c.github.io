@@ -1,0 +1,696 @@
+
+body {
+	font-family: "Helvetica Neue","Helvetica","Arial", Sans-Serif;;
+}
+
+@font-face{
+	font-family: myfont;
+	src: url('../font/fontello/font/fontello.ttf');
+}
+
+@font-face{
+	font-family: fontdettagli;
+	src: url('../font/fontello/font-dettagli/fontello.ttf');
+}
+
+#container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	background: #C0D39E; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #C0D39E 0%, #C0D39E 52%, #44AA7A 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#C0D39E), color-stop(52%,#C0D39E), color-stop(100%,#0aaa5f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #C0D39E 0%,#C0D39E 52%,#44AA7A 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #C0D39E 0%,#C0D39E 52%,#44AA7A 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #C0D39E 0%,#C0D39E 52%,#44AA7A 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #C0D39E 0%,#C0D39E 52%,#44AA7A 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C0D39E', endColorstr='#44AA7A',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+a {
+	margin: 0px;
+	padding: 0px;
+	color: inherit;
+	text-decoration: none;
+}
+
+.selezione {
+	background-color: #ffffff;
+	font-weight: bold;
+}
+
+.hidden {
+	display: none;
+}
+
+section #listaCentrale li.selezioneAtt {
+	background-color: #ddd;
+}
+
+/*---------------------------------------------PAGINA LOGIN------------------------------------------------------------*/
+
+#login {
+ 	 margin: 100px auto;
+   width: 20%;
+}
+
+#login fieldset {
+	border-radius: 20px;
+}
+
+#login button {
+    width: 115px;
+		margin-top: 10px;
+}
+
+#login input {
+	margin-bottom: 5px;
+}
+
+h1 {
+	margin: 20px auto;
+	width: 50%;
+	text-align: center;
+	color: #545454;
+}
+
+h2 {
+	margin: 0px auto;
+	width: 50%;
+	text-align: center;
+	color: #8a8a8a;
+	font-weight:normal;
+}
+
+p#linea {
+	margin: 0 auto;
+  width: 800px;
+	height: 2px;
+	background: -moz-linear-gradient(left,  rgba(138,138,138,0) 0%, rgba(138,138,138,0.5) 8%, rgba(138,138,138,0.75) 21%, rgba(138,138,138,1) 50%, rgba(138,138,138,0.75) 76%, rgba(138,138,138,0.5) 92%, rgba(138,138,138,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(138,138,138,0)), color-stop(8%,rgba(138,138,138,0.5)), color-stop(21%,rgba(138,138,138,0.75)), color-stop(50%,rgba(138,138,138,1)), color-stop(76%,rgba(138,138,138,0.75)), color-stop(92%,rgba(138,138,138,0.5)), color-stop(100%,rgba(138,138,138,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(138,138,138,0) 0%,rgba(138,138,138,0.5) 8%,rgba(138,138,138,0.75) 21%,rgba(138,138,138,1) 50%,rgba(138,138,138,0.75) 76%,rgba(138,138,138,0.5) 92%,rgba(138,138,138,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(138,138,138,0) 0%,rgba(138,138,138,0.5) 8%,rgba(138,138,138,0.75) 21%,rgba(138,138,138,1) 50%,rgba(138,138,138,0.75) 76%,rgba(138,138,138,0.5) 92%,rgba(138,138,138,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(138,138,138,0) 0%,rgba(138,138,138,0.5) 8%,rgba(138,138,138,0.75) 21%,rgba(138,138,138,1) 50%,rgba(138,138,138,0.75) 76%,rgba(138,138,138,0.5) 92%,rgba(138,138,138,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(138,138,138,0) 0%,rgba(138,138,138,0.5) 8%,rgba(138,138,138,0.75) 21%,rgba(138,138,138,1) 50%,rgba(138,138,138,0.75) 76%,rgba(138,138,138,0.5) 92%,rgba(138,138,138,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008a8a8a', endColorstr='#008a8a8a',GradientType=1 ); /* IE6-9 */
+
+}
+.errore{
+		border:1px solid #ff0000;
+}
+		
+/* ----------------------------------------- NAV ------------------------------------------------- */
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 270px;
+	font-size: 13px;
+	background-color: #dddddd;
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4);
+	overflow-y:auto;
+}
+
+#intestaz {
+	position: relative;
+	top: -24px;
+	height: 50px;
+	box-shadow: 1px 1px 2px #6C6C6C;
+}
+
+#intestaz>p {
+	text-align: center;
+	line-height: 50px;
+	color: #ABABAB;
+	text-shadow: 4px 4px 8px rgba(150, 150, 150, 0.5);
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+ul#list {
+	list-style-type: none;
+	color: #565656;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -35px;
+}
+
+ul#list li {
+	border-bottom: 1px dotted #6c6c6c;
+	height: 35px;
+	line-height: 35px;
+	background-color: #ddd;
+}
+
+#list span.icon {
+	display: inline-block;
+	background-image: url("../img/list_small.png");
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/*#list span#preferitiIcon {
+	display: inline-block;
+	background-image: url("../img/preferiti.png");
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}*/
+
+#list span.contatore {
+	float:right;
+	margin-right: 5px;
+	color: #888888;
+	font-size: 0.8em;
+}
+
+#aggiungiCat {
+	position:relative;
+	top: -25px;
+}
+
+#rimuoviCat{
+	position: relative;
+	top: -20px;
+}
+
+#add {
+	width: 200px;
+	text-align:center;
+}
+
+#remove {
+	width: 206px;
+}
+
+#iconAdd, #iconRemove{
+	margin-left: 7px;
+	position: relative;
+	text-align: center;
+	top: 4px;
+}
+/* ----------------------------------------- fine NAV ------------------------------------------------- */
+
+/* ----------------------------------------- INTESTAZIONE ------------------------------------------------- */
+#intestazione {
+	position: absolute;
+	top:0px;
+	left: 270px;
+	right: 0px;
+	height: 40px;
+	background-color: #777777;
+	line-height: 40px;
+	text-align: center;
+	color:#ffffff;
+}
+
+#intestazione #mostraNav {
+	float:left;
+	margin-left: 15px;
+	margin-top: 5px;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	opacity: 0.5;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+#intestazione #invitaAmici {
+	float:right;
+	margin-right: 25px;
+	margin-top: 5px;
+	height: 30px;
+	width: 30px;
+}
+
+/* ----------------------------------------- fine INTESTAZIONE ------------------------------------------------- */
+
+/* ----------------------------------------- SECTION ------------------------------------------------- */
+section {
+	background-color: transparent;/*rgba(255,255,255,0.3);*/
+	position: absolute;
+	top: 0px;
+	left: 270px;
+	right: 10px;
+	bottom:40px;
+	margin:15px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+section ul {
+	list-style: none;
+	margin:0px;
+	padding: 0px;
+}
+
+section #listaCentrale {
+	margin-top: 15px;
+}
+
+section #listaCentrale li {
+	background-color: #ffffff;
+	margin-top: 7px;
+	padding-right:5px;
+	border-radius: 5px;
+	color: #565656;
+}
+
+section #listaCentrale div {
+	display: inline-block;
+	padding: 5px;
+	border-right: 1px dotted #565656;
+	margin-right: 5px;
+}
+
+section #listaCompletate {
+	margin-top: 7px;
+	padding-right:5px;
+	border-radius: 5px;
+	color: #565656;
+	text-decoration: line-through;
+}
+
+section #listaCompletate div {
+	display: inline-block;
+	padding: 5px;
+	border-right: 1px dotted #565656;
+	margin-right: 5px;
+}
+
+section #listaCompletate li{
+	background-color: #ffffff;
+	margin-top: 7px;
+	padding-right:5px;
+	border-radius: 5px;
+	color: #565656;
+	opacity: 0.4;
+}
+
+section input[type="checkbox"] {
+	width: 32px;
+	height: 32px;
+}
+
+.preferitiIcon {
+	height: 20px;
+	position:relative;
+	top: 5px;
+	float:right;
+}
+
+#tools {
+	bottom: 0;
+	height: 34px;
+	position: absolute;
+	left: 50%;
+	/*min-width:200px;*/
+	min-width: 180px;
+	text-align: center;
+	margin: 10px auto;
+	border-radius: 4px;
+	left: 270px;
+	right: 25px;
+	z-index: 2000;
+	line-height: 32px;
+}
+
+.slidingDiv {
+	position: absolute;
+	bottom: 35px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	border-radius: 5px;	
+	height: 0;
+	line-height: 35px;
+	font-size: 13px;
+	width: 160px;
+	text-align: justify;
+	background: #dddddd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #dddddd 0%, #595959 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#595959)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dddddd 0%,#595959 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dddddd 0%,#595959 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dddddd 0%,#595959 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dddddd 0%,#595959 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#595959',GradientType=0 ); /* IE6-9 */
+	z-index: 2001; 
+}
+
+.slidingDiv img {
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+a.icona_tools {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	border-right: 2px solid #777777;
+	margin-right: -5px;
+	background: #dddddd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #dddddd 0%, #595959 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#595959)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dddddd 0%,#595959 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dddddd 0%,#595959 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dddddd 0%,#595959 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dddddd 0%,#595959 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#595959',GradientType=0 ); /* IE6-9 */
+	z-index: 2001;
+}
+
+a.icona_tools:hover {
+	background-color: #ffffff;
+	background: -moz-linear-gradient(top,  #dddddd 0%, #595959 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */ 
+}
+
+#tools a.icona_tools:nth-last-child(5) {
+	border-radius: 7px 0px 0px 7px;
+}
+
+#tools a.icona_tools:nth-last-child(1) {
+	border-right: 0px none;
+	border-radius: 0px 7px 7px 0px;
+}
+
+a.icona_tools{
+	font-family: myfont;
+	font-size: 1.5em;
+}
+
+#calendarioIcona {
+	float: right;
+	margin-right: 10px;
+	margin-top: 2px;
+	opacity: 0.4; 
+}
+
+.calendarioIconaBig {
+	width: 2%;
+}
+
+.calendarioIconaSmall {
+	width: 3%;
+}
+
+#calendario {
+	background: none;
+	position: absolute;
+	right: 80px;
+	width: 241px;
+	border: 0px none;
+	visibility: hidden;
+}
+
+.ui-datepicker-trigger{
+	position: absolute;
+	right: 15px;
+}
+
+#addActivity {
+	background-color: transparent;
+	border: 0px solid #fff;
+	height: 100%;
+	padding: 0px;
+	vertical-align: middle;
+	width: 90%;
+	margin-left: 10px;
+}
+
+#insertActivity {
+	border-radius: 5px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.4);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(125,126,125,0.2) 0%, rgba(160,240,150,0.9) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(125,126,125,0.2)), color-stop(100%,rgba(160,240,150,0.9))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,126,125,0.2) 0%,rgba(160,240,150,0.9) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(125,126,125,0.2) 0%,rgba(160,240,150,0.9) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(125,126,125,0.2) 0%,rgba(160,240,150,0.9) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(125,126,125,0.2) 0%,rgba(160,240,150,0.9) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#337d7e7d', endColorstr='#e6b3d378',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	margin: 0px;
+	padding: 0px;
+	height: 25px;
+	width: 100%;
+}
+
+/* ----------------------------------------- fine SECTION ------------------------------------------------- */
+
+/* ----------------------------------------- DETTAGLI ------------------------------------------------- */
+
+#dettagli {
+	background-color: #dddddd;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 340px;
+	margin: 15px 15px 15px 0px;
+	z-index: 1000;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+button.fontello{
+	font-family: fontdettagli;
+	font-size: 0.9em;
+	border: 0px none;
+	background-color: transparent;
+	padding: 0px;
+	position: absolute;
+	top: 16px;
+}
+
+button.conferma{
+	right:20px;
+	color: #5db33e;
+}
+
+button.cancella{
+	right:4px;
+	color: #929da1;
+}
+
+div#dettagli.nascosto {
+	right: -370px;
+}
+
+div#titleDettagli {
+	width: 100%;
+	height: 40px;
+	display: inline-block;
+	box-shadow: 1px 1px 2px #6c6c6c;
+	vertical-align:middle;
+	line-height: 40px;
+    padding-left: 12px;
+}
+
+div#titleDettagli>div{
+	display:inline-block;
+	vertical-align:middle;
+	margin: 10px;
+}
+
+.elementiDettagli{
+	border-bottom: 1px dotted #6c6c6c;
+	position: relative;
+	height:50px;
+	line-height: 50px;
+}
+
+.dataDettagli>div {
+	margin: 10px;
+}
+
+.dataDettagli {
+	display:inline-block;
+	margin-left: 10px;
+	vertical-align:middle;
+	/*color: #929DA1;*/
+	opacity: 0.4;
+}
+
+#calendarioDettagli {
+	width: 100px;
+	margin: 10px 0 10px 10px;
+}
+
+#calendarioRicorda {
+	width: 100px;
+	margin: 10px;
+}
+
+#ore, #minuti {
+	width: 20px;
+	background: none;
+	border: none;
+	margin: -2px;
+}
+
+#ora {
+	background-color: #FFFFFF;
+	border: 1px solid #ADA9A5;
+	border-radius: 3px;
+	text-align: center;
+	width: 50px;
+	padding: 0px 2px 0px 8px;
+}
+
+#divScadenza p#riassunto{
+	height: 30px;
+	line-height: 30px;
+	margin: -50px 0 0px 40px;
+}
+
+#divScadenza p#repeat{
+	font-size: 0.8em;
+    height: 20px;
+    line-height: 20px;
+    margin: -6px 0 2px 40px;
+    color:#6c6c6c;
+}
+
+p#scadenza {
+	height: 50px;
+    margin: 0;
+    padding: 0;
+    line-height:50px;
+}
+
+p.ricordamelo {
+	margin: 0px;
+	padding: 0px;
+}
+
+#promemoria p#oraProm{
+	height: 30px;
+	line-height: 30px;
+	margin: -50px 0 0px 40px;
+}
+
+#promemoria p#giornoProm{
+	font-size: 0.8em;
+    height: 20px;
+    line-height: 20px;
+    margin: -6px 0 2px 40px;
+    color:#6c6c6c;
+}
+
+.attivitaSec {
+	padding: 4px;
+	margin: 1px 1px 1px 1px;
+	border-bottom: 1px dotted #6C6C6C;
+}
+
+#bodyDettagli {
+	overflow-y: auto;
+	position: absolute;
+	top: 40px;
+	bottom: 50px;
+	width: 100%;
+}
+
+div#bodyDettagli>div:nth-child(3){
+	background-color: #eee; 
+	width: 90%; 
+	margin: 0 auto; 
+	margin-top: 10px; 
+	margin-bottom: 10px;
+}
+
+div#bodyDettagli :nth-child(3) div{
+	width: 30px; 
+	height: 30px;
+	border-right: double #929DA1; 
+	text-align: center;
+	margin-left: 0px;
+}
+
+.dataDettagli span {
+	vertical-align: middle;
+	line-height:30px;
+	color: #929DA1;
+}
+
+div#bodyDettagli textarea {
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 90%;
+}
+
+#attSec {
+	width:235px;
+
+}
+
+#addFile{
+	width: 150px;
+	background-color: transparent;
+	border-radius: 4px;
+	height: 30px;
+	margin: 15px;
+	width: 90%;
+}
+
+div#file {
+	position:relative;
+}
+
+#file button.cancella {
+	top: 23px;
+	
+}
+
+#commenti-bottoni {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+#commenti input {
+	margin-left: 20px;
+	width:  90%;
+}
+
+.commentoUtente {
+	margin: 0 0 0 22px;
+	font-size: 0.9em;
+	border-top: 1px dotted #6C6C6C;
+	width: 90%;
+
+}
+
+#commenti-bottoni a {
+	float: left;
+}
+
+#commenti-bottoni button {
+	float: right;
+	vertical-align:middle;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+}
+
+#ripeti {
+	width: 130px;
+	height: 25px;
+}
+
+/* ----------------------------------------- fine DETTAGLI ------------------------------------------------- */

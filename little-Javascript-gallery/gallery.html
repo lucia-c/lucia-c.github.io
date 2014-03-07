@@ -2,7 +2,38 @@
 <html>
 	<head>
 		<meta charset="utf-8" /> 
-		<title>Galleria javascript DOM</title>	
+		<title>Galleria javascript DOM</title>
+		<style>
+			body {
+				background-color: #000;
+				color: #fff;
+			}
+			.immagine{
+				position:absolute;
+				width: 100%;
+			}
+			#pics {
+				width:60%;
+				margin:10px auto;
+				position: relative;			
+			}		
+			h3 {
+			text-align: center;
+			}
+		</style>
+
+		
+	</head>
+	<body onload="gallery()">
+		<h3>Galleria javascript DOM</h3>
+		<div id="pics">
+			<img src="img/stark.jpg" />
+			<img src="img/greyjoy.jpg" />
+			<img src="img/targaryen.jpg" />
+			<img src="img/lannister.jpg" />
+			
+		</div>
+	</body>
 		<script type="text/javascript">
 		function gallery() {
 			
@@ -53,32 +84,4 @@
 			}
 		}		
 		</script>
-
-		<style>
-		body {
-			background-color: #000;
-			color: #fff;
-		}
-		.immagine{
-			position:absolute;
-			width: 100%;
-		}
-		#pics {
-			width:60%;
-			margin:10px auto;
-			position: relative;			
-		}		
-		h3 {
-		text-align: center;
-		}
-		</style>		
-	</head>
-	<body onload="gallery()">
-		<h3>Galleria javascript DOM</h3>
-		<div id="pics">
-			<img src="img/stark.jpg" />
-			<img src="img/lannister.jpg" />
-			<img src="img/greyjoy.jpg" />
-		</div>
-	</body>
 </html>

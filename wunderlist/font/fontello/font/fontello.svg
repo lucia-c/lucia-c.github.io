@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2013 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="user-add" unicode="&#xe800;" d="m620 128q180-64 180-122l0-106l-800 0l0 202q36 14 82 26q94 34 129 69t35 95q0 22-23 48t-31 74q-2 12-23 25t-25 61q0 16 5 26t9 12l4 4q-8 50-12 88q-6 54 40 112t160 58t160-58t42-112l-14-88q18-8 18-42q-2-28-9-43t-14-17t-14-8t-9-18q-10-46-33-73t-23-49q0-60 36-95t130-69z m230 272l150 0l0-100l-150 0l0-150l-100 0l0 150l-150 0l0 100l150 0l0 150l100 0l0-150z" horiz-adv-x="1000" />
+<glyph glyph-name="mail" unicode="&#xe801;" d="m834 688q44 0 74-30t30-74l0-468q0-43-30-74t-74-30l-730 0q-44 0-74 30t-30 74l0 468q0 44 30 74t74 30l730 0z m-421-454l-82 72l-190-190l655 0l-190 190l-81-72q-24-20-56-20t-56 20z m-309-82l187 189l-187 163l0-352z m542 189l188-188l0 351z m188 243l-730 0l0-11l342-300q9-7 23-7t22 7l343 300l0 11z" horiz-adv-x="938" />
+<glyph glyph-name="sort-alphabet" unicode="&#xe804;" d="m516 165q12-25-2-50t-44-25q-33 0-47 29l-37 75l-249 0l-37-75q-9-20-30-27t-40 3q-20 9-27 29t3 41l209 417q13 27 47 27t46-27z m-326 134l143 0l-72 143z m905-209l-313 0q-30 0-45 27t4 57l250 332l-209 0q-21 0-37 16t-15 37t15 36t37 16l313 0q30 0 45-28t-4-56l-250-333l209 0q21 0 37-15t15-37t-15-37t-37-15z m-417 209l-105 0q-21 0-36 15t-15 36t15 37t36 15l105 0q22 0 37-15t15-37t-15-36t-37-15z" horiz-adv-x="1147" />
+<glyph glyph-name="trash" unicode="&#xe803;" d="m0 684q0 37 59 67t161 49t222 18q121 0 223-18t161-49t59-67q-10-80-39-227t-55-276t-29-138q-6-36-39-68t-81-51t-100-31t-100-12t-100 12t-99 31t-81 51t-39 68q-4 21-33 160t-56 278t-34 203z m126-223l38-183l87 75z m6 193q0-31 91-54t219-22q129 0 220 22t91 54q0 32-91 55t-220 22t-219-22t-91-55z m55-488l21-102l49 42z m8 312l101-87l71 62q-95 6-172 25z m5-246l101-88l96 83l-101 87z m49-209q72-30 149-38l-97 83z m91 330l101-88l96 83l-99 89z m6-247l102-88l95 83l-102 88z m140 121l101-87l92 80l-98 89z m14-241q71 8 134 36l-47 41z m8 466l73-66l106 91q-79-20-179-25z m117-105l93-84l41 199z m7-246l44-39l20 96z" horiz-adv-x="884.8" />
+<glyph glyph-name="print" unicode="&#xe802;" d="m0 176l0 305l1000 0l0-305l-154 0l54-265l-800 0l54 265l-154 0z m33 362l235 99l39 0l0 153l386 0l0-153l39 0l235-99l-934 0z m131-553l672 0l-78 381l-516 0z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

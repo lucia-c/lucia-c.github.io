@@ -1,0 +1,6 @@
+
+.icon-user-add:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+.icon-sort-alphabet:before { content: '\e804'; } /* '' */
+.icon-trash:before { content: '\e803'; } /* '' */
+.icon-print:before { content: '\e802'; } /* '' */
